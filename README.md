@@ -1,2 +1,2 @@
 # minimax
-It's a bitwise minimax algorithm implementation in python 
+It's a bitwise minimax algorithm implementation in python. I'm too lazy to write a proper read me or docs. Would add later...
