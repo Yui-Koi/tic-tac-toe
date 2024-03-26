@@ -106,6 +106,7 @@ def make_move(X: int, O: int, turn: str, players: dict, cache: dict) -> Tuple[in
       O |= masks[move]
   return X, O
 
+# Initialise game
 def initialise_game() -> Tuple[str, str]:
   """
   This function prompts the user to choose their player symbol (X or O) and determines the AI's symbol.
@@ -120,7 +121,7 @@ def initialise_game() -> Tuple[str, str]:
   return player_symbol, ai_symbol
 
 # Game loop
-def play_game(X, O) -> None:
+def play_game(X: int, O: int) -> None:
   """
   This function handles the main game loop, including making moves, checking for wins, and determining the winner.
   Args:
