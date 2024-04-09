@@ -152,4 +152,4 @@ print_board = lambda X, O: print("\n".join("|" + "|".join(" XO"[(X >> i) & 1 | (
 check_win = lambda player_mask: any(player_mask & mask == mask for mask in win_mask)
 switch_symbol = lambda X, O, symbol, shift: X if symbol == shift else O
 
-play_game()
+play_game(X, O)
