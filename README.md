@@ -1,33 +1,29 @@
-# Tic-Tac-Toe Bitboard Implementation with Minimax Alpha-Beta Pruning
+# **Tic Tac Toe with Minimax Algorithm and Bitboards**
 
-This is a Python implementation of the Tic Tac Toe game, with an AI player that uses the Minimax algorithm with Alpha-Beta pruning to determine the best move.
+A hobby project implementing the Minimax algorithm with alpha-beta pruning to play Tic Tac Toe. This implementation uses bitboards to efficiently represent the game state and uses a transposition table to reduce computational complexity.
 
-## Features
+# **Features**
+* **Minimax Algorithm**: Implemented with alpha-beta pruning to find the best move for the current player.
+* **Bitboard Representation**: Efficiently represents the game state using bitboards, allowing for fast evaluation of moves.
+* **Transposition Table**: Stores the results of previous evaluations to reduce computational complexity.
+* **User-Friendly Interface**: Play against the AI or make moves manually.
+* **Game Loop**: Handles the main game loop, including making moves, checking for wins, and determining the winner.
 
-- Minimax algorithm with Alpha-Beta pruning for the AI player
-- Transposition table for caching previous evaluations
-- Terminal interface for playing against the AI
-- Supports both X and O as player symbols
+# **How to Play**
 
-## Usage
+1. Clone the repository and run the script.
+2. Choose your player symbol (X or O) when prompted.
+3. Make moves by entering the number of the space where you'd like to place your symbol (1-9).
+4. The AI will make its moves automatically.
+5. The game will end when a player wins or the board is full (tie).
 
-1. Run the script to start the game.
-2. When prompted, choose whether you want to play as X or O.
-3. Input your moves by entering a number between 1 and 9 (1 for the top-left corner, 9 for the bottom-right corner).
-4. The AI will make its move, and the game will continue until a winner is determined or the game ends in a tie.
+# **Technical Details**
 
-## How it Works
+* **Bitboard Masks**: Used to efficiently update the game state and check for wins.
+* **Minimax Function**: Implements the Minimax algorithm with alpha-beta pruning to find the best move.
+* **Get Best Move**: Finds the best move for the current player based on the Minimax algorithm.
+* **User Move**: Handles user input and updates the game state accordingly.
 
-The main components of the implementation are:
+# **Contributing**
 
-1. `minimax()` function: This function implements the Minimax algorithm with Alpha-Beta pruning to determine the best move for the current player.
-2. `get_best_move()` function: This function uses the `minimax()` function to find the best move for the current player.
-3. `user_move()` function: This function handles the user's input and updates the board accordingly.
-4. `make_move()` function: This function determines whether the current move should be made by the user or the AI and updates the board accordingly.
-5. `play_game()` function: This function manages the main game loop, including initializing the game, making moves, checking for wins, and determining the winner.
-
-The game uses a bit-board representation to efficiently store the current state of the board, and the `masks` list is used to represent the possible moves on the board.
-
-## Dependencies
-
-This implementation does not require any external dependencies. It uses only standard Python libraries.
+If you'd like to contribute to this project, please open a pull request with your suggested changes.
