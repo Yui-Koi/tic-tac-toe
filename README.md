@@ -1,4 +1,4 @@
-# **Tic Tac Toe with Minimax Algorithm and Bitboards**
+# **Tic-Tac-Toe with Minimax alpha beta pruning and bitboards**
 
 A hobby project implementing the Minimax algorithm with alpha-beta pruning to play Tic Tac Toe. This implementation uses bitboards to efficiently represent the game state and uses a transposition table to reduce computational complexity.
 
