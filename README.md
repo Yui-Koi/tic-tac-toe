@@ -1,4 +1,4 @@
-# Tic Tac Toe AI with Minimax and Alpha-Beta Pruning
+# Tic-Tac-Toe Bitboard Implementation with Minimax Alpha-Beta Pruning
 
 This is a Python implementation of the Tic Tac Toe game, with an AI player that uses the Minimax algorithm with Alpha-Beta pruning to determine the best move.
 
